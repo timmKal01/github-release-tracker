@@ -1,0 +1,47 @@
+{
+    "title": "GitHub Release Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "repos": {
+            "title": "Repositories",
+            "type": "array",
+            "editor": "stringList",
+            "description": "GitHub repos to check, as \"owner/repo\" (e.g. \"facebook/react\"). One release lookup is billed per repo.",
+            "prefill": ["facebook/react"]
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "Only return releases published within this many days of today.",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 365
+        },
+        "includePrereleases": {
+            "title": "Include pre-releases",
+            "type": "boolean",
+            "editor": "checkbox",
+            "description": "Include releases marked as pre-release (betas, release candidates) in addition to stable releases.",
+            "default": false
+        },
+        "maxResultsPerRepo": {
+            "title": "Max results per repo",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of releases to return per repo, most recent first.",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 50
+        },
+        "githubToken": {
+            "title": "GitHub token (optional)",
+            "type": "string",
+            "editor": "textfield",
+            "isSecret": true,
+            "description": "Optional personal access token. Not required for public repos, but raises GitHub's API rate limit from 60 to 5,000 requests/hour if you're checking many repos in one run."
+        }
+    },
+    "required": ["repos"]
+}

@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of GitHub Release Tracker",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Releases",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

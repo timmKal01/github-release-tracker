@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "github-release-tracker",
+    "title": "GitHub Release Tracker — New Versions & Changelogs",
+    "description": "Track new releases for the GitHub repos your team depends on. Get the version tag, changelog, publish date, and release URL the moment a new one ships — for engineering and security teams who can't check every repo by hand.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}
