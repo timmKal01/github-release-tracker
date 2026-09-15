@@ -8,7 +8,8 @@
             "type": "array",
             "editor": "stringList",
             "description": "GitHub repos to check, as \"owner/repo\" (e.g. \"facebook/react\"). One release lookup is billed per repo.",
-            "prefill": ["facebook/react"]
+            "prefill": ["facebook/react"],
+            "default": ["facebook/react"]
         },
         "daysBack": {
             "title": "Days back",
