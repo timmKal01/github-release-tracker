@@ -1,0 +1,53 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "repo",
+                    "tagName",
+                    "name",
+                    "publishedAt",
+                    "isPrerelease",
+                    "htmlUrl",
+                    "author"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "repo": {
+                        "label": "Repo",
+                        "format": "text"
+                    },
+                    "tagName": {
+                        "label": "Tag name",
+                        "format": "text"
+                    },
+                    "name": {
+                        "label": "Name",
+                        "format": "text"
+                    },
+                    "publishedAt": {
+                        "label": "Published at",
+                        "format": "date"
+                    },
+                    "isPrerelease": {
+                        "label": "Is prerelease",
+                        "format": "boolean"
+                    },
+                    "htmlUrl": {
+                        "label": "HTML URL",
+                        "format": "link"
+                    },
+                    "author": {
+                        "label": "Author",
+                        "format": "text"
+                    }
+                }
+            }
+        }
+    }
+}
