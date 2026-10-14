@@ -59,5 +59,5 @@ repo whether it has 0 or 50 matching releases.
 
 ## Related products
 
-- [Company Hiring Tracker](https://github.com/timmKal01/company-hiring-tracker) — same per-item pattern, for job board openings instead of releases
-- [Vulnerability Alert](https://github.com/timmKal01/vulnerability-alert) — new CVEs by product, if you're watching for security issues rather than version bumps
+- [Company Job Openings Tracker](https://apify.com/m_ctim/company-hiring-tracker): same per-item pattern, for job board openings instead of releases
+- [CVE Tracker](https://apify.com/m_ctim/vulnerability-alert): new CVEs by product, if you're watching for security issues rather than version bumps
